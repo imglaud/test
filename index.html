@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 프로그래밍 기말과제</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>웹 프로그래밍 기말과제</h1>
+    <p>HTML · CSS · JavaScript 활용</p>
+    <button id="darkModeBtn">다크모드</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>자기소개</h2>
+      <p>
+        본 웹사이트는 웹 프로그래밍 수업에서 배운 내용을 바탕으로
+        제작한 기말과제입니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>간단한 계산기</h2>
+      <input type="number" id="num1" placeholder="숫자 1">
+      <input type="number" id="num2" placeholder="숫자 2">
+      <button onclick="calculate()">계산하기</button>
+      <p id="result">결과: </p>
+    </section>
+
+    <section class="card">
+      <h2>오늘의 할 일</h2>
+      <input type="text" id="todoInput" placeholder="할 일을 입력하세요">
+      <button onclick="addTodo()">추가</button>
+      <ul id="todoList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Web Final Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
